@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Contenedor principal */
+.content-Usuario {
+    max-width: 920px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(23, 23, 23, 0.06);
+}
+
+.content-Usuario h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #111827;
+    text-align: left;
+}
+
+.targetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.targeta-Usuario {
+    background: #fbfbfb;
+    border: 1px solid #eef2f6;
+    padding: 16px;
+    border-radius: 10px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.targeta-Usuario:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+}
+
+.targeta-Usuario h3 {
+    font-size: 1rem;
+    color: #0f172a;
+}
+
+.targeta-Usuario p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+
+
+.targeta-Usuario .catchphrase {
+    font-style: italic;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+.content-Usuario p {
+    color: #6b7280;
+}
+
+@media (max-width: 520px) {
+    .content-Usuario {
+        margin: 20px;
+        padding: 18px;
+    }
+}
